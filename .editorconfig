@@ -1,6 +1,18 @@
 root = true
 
+# =========================
+# Global defaults
+# =========================
 [*]
 end_of_line = lf
 charset = utf-8
 insert_final_newline = true
+
+# =========================
+# Code files (JS/TS/Vue/CSS/etc)
+# =========================
+[*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue,css,scss,sass,less,styl,json,yml,yaml}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+max_line_length = 100

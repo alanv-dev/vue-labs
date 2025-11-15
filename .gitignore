@@ -1,43 +1,47 @@
 # =========================
-# Dependências Node
+# Node / Dependencies
 # =========================
 node_modules/
 
 # =========================
-# Builds / artefatos de bundlers
+# Builds
 # =========================
 dist/
-build/
+dist-ssr/
 .vite/
-
-# =========================
-# Cobertura de testes
-# =========================
-coverage/
-*.lcov
 
 # =========================
 # Logs
 # =========================
+logs
+*.log
+lerna-debug.log*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
 # =========================
-# Arquivos de ambiente
-# (manter apenas .env.example versionado)
+# Tests / Coverage
+# =========================
+/cypress/videos/
+/cypress/screenshots/
+coverage/
+__screenshots__/
+
+# =========================
+# Environment files
 # =========================
 .env
 .env.local
 .env.*.local
+*.local
 
 # =========================
-# IDE / Editor
+# Cache / Temporary
 # =========================
-.idea/
-.vscode/
-*.iml
+.eslintcache
+*.tsbuildinfo
 
 # =========================
 # Arquivos de sistema
@@ -46,11 +50,18 @@ pnpm-debug.log*
 Thumbs.db
 
 # =========================
-# TypeScript
+# Editor files
 # =========================
-*.tsbuildinfo
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # =========================
-# Docker
+# Docker overrides
 # =========================
 docker-compose.override.yml
